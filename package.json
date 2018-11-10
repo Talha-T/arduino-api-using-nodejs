@@ -1,0 +1,23 @@
+{
+  "name": "arduino-api-using-nodejs",
+  "version": "1.0.0",
+  "description": "Upload your Arduino data to web using nodejs",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arduino",
+    "nodejs",
+    "data"
+  ],
+  "author": "implicit",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "serialport": "^7.0.2",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  }
+}

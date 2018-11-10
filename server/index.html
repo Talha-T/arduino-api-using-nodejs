@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>İnternete Veri atma</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on("received_data", function (data) {
+            document.getElementById("text").innerHTML = data.key + " = " + data.value;
+            console.log(data);
+        });
+    </script>
+</head>
+
+<body>
+    <p id="text"></p>
+</body>
+
+</html>
